@@ -1,4 +1,7 @@
 Rails.application.configure do
+  config.action_mailer.default_url_options = { :host => '47.92.28.60' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = config_for(:email).symbolize_keys
   config.active_job.queue_adapter = :sidekiq
   # Settings specified here will take precedence over those in config/application.rb.
 
