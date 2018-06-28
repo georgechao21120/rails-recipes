@@ -1,8 +1,8 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.0"
 
-set :application, "play001"
-set :repo_url, "git@github.com:georgechao21120/play001.git"
+set :application, "rails_recipes"
+set :repo_url, "git@github.com:georgechao21120/rails-recipes.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
