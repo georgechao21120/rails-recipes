@@ -1,4 +1,4 @@
-source 'https://gems.ruby-china.org'
+source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -7,12 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.2'
-
-gem 'bootstrap-sass'
-
-gem 'devise'
-
+gem 'rails', '~> 5.0.7'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -40,40 +35,29 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem "rails-i18n"
-gem "devise-i18n"
-gem "select2-rails"
-gem "nested_form_fields"
-gem 'bootstrap-datepicker-rails'
-gem 'ckeditor'
-gem 'ranked-model'
-gem 'jquery-ui-rails'
-gem 'kaminari'
-gem 'ransack'
-gem 'carrierwave'
-gem "mini_magick"
-gem 'paper_trail'
-gem 'rubyzip'
-gem 'axlsx'
-gem 'axlsx_rails'
-gem 'premailer-rails'
-gem 'sidekiq'
-
-gem 'mysql2'
-
 group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'capistrano-rails'
   gem 'capistrano-passenger'
-
-  gem 'rspec-rails'
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
 
-group :development do
-  gem 'faker'
-  gem 'letter_opener'
+gem 'bootstrap-sass'
+gem 'devise'
+gem 'simple_form'
+gem 'font-awesome-rails'
+gem 'carrierwave'
+gem 'ransack'
+gem 'mini_magick'
+gem 'carrierwave-qiniu'
+gem 'qiniu-rs'
+gem 'figaro'
+gem 'will_paginate'
+gem 'rack-attack'
+gem 'mysql2'
 
+
+group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
